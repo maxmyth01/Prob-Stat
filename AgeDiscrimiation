@@ -1,1 +1,18 @@
 
+
+import random
+great = 0
+x = 0
+sum = 0
+while x < 10:
+    sum = 0
+    age = [25, 33, 35, 48, 55, 38, 56, 55, 64, 38]
+    random.shuffle(age)
+    sum = age[1] + age[2] + age[3]
+    average = round(sum/3)
+    x += 1
+    if average > 57.9:
+        great += 1
+    print(x)
+    print(average)
+print(great)
